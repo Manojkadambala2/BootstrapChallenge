@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Acme Training Academy</title>
+</head>
+<body>
+    <div class="container-fluid bg-primary">
+        <h1 class="text-capitalize text-center">acme training academy</h1>
+    </div>
+    <div class="container" style="width:50%; margin-top:2%">
+        <h2 class="text-capitalize text-center">Registration Form</h2>
+
+        <!-- horizontal form -->
+        <form class="form-horizontal justify-content-center" action="/action_page.php">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Full Name*</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="email" placeholder="Last name, First name Ex: Smith, John">
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email Id*</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="user@domain.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password*</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control is-invalid" id="pwd" placeholder="Enter password">
+                <div class="invalid-feedback">
+                    Must have atleast one uppercase letter and digit
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Confirm Password*</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="pwd" placeholder="Re-type password">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="control-label col-sm-2">Gender</label>
+                <div class="col-sm-10">
+                    <!-- Male-->
+                    <div class="custom-control custom-radio col-sm-2">
+                        <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample" checked>
+                        <label class="custom-control-label" for="defaultInline1">Male</label>
+                    </div>
+                    
+                    <!-- Female-->
+                    <div class="custom-control custom-radio col-sm-8">
+                        <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+                        <label class="custom-control-label" for="defaultInline2">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Educational Qualification</label>
+                <div class="col-sm-10">
+                    <select id="qualification" class="form-control">
+                        <option selected>Choose your qualification</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Mobile Number</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Mobile Number">
+                </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-4 col-sm-8">
+                <button type="submit" class="btn btn-success">Register</button>
+              </div>
+            </div>
+          </form>
+    </div>
+</body>
+</html>
